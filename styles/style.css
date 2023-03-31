@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body nav {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+body nav ul {
+  display: flex;
+}
+
+body nav ul li {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+body nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+
+body nav ul li a:hover {
+  color: rgb(54, 212, 138);
+}
+
+body main section.main-area {
+  min-height: 70vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+body main section.main-area div.info {
+  flex-basis: 450px;
+}
+
+body main section.main-area div.info h1 {
+  font-size: 3.5rem;
+}
+
+body main section.main-area div.info h2 {
+  font-size: 1rem;
+}
+
+body main section.main-area div.info a {
+  color: white;
+  background-color: rgb(54, 212, 138);
+  padding: 0.25rem 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+
+body main section.main-area div.info a:hover {
+  transform: scale(1.2);
+}
+
+body main section.main-area img {
+  flex-basis: 300px;
+  width: 30vw;
+}
+
+body main section.about-me {
+  background-color: rgb(231, 255, 233);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 2rem;
+}
+
+body main section.about-me div.decs {
+  width: 50%;
+  text-align: center;
+}
+
+body main section.about-me div.decs h2 {
+  font-size: 2rem;
+}
+
+body main section.about-me div.porgress-area p {
+  margin: 0.5rem 0rem;
+}
+
+body main section.about-me div.porgress-area .porgress-bar {
+  margin-top: 2rem;
+}
+
+body main section.resume {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+body main section.resume section.table {
+  flex: 5 1 500px;
+  padding: 2rem;
+}
+
+body main section.resume section.table table {
+  border-collapse: collapse;
+}
+
+body main section.resume section.table table tr {
+  border-bottom: 2px solid gray;
+  transition: all 0.2s ease;
+}
+
+body main section.resume section.table table tr:hover {
+  background-color: rgb(184, 255, 222);
+}
+
+body main section.resume section.table table td {
+  padding: 1rem;
+}
+
+body main section.resume section.picture {
+  flex: 1 1 500px;
+  position: relative;
+}
+
+body main section.resume section.picture img {
+  width: 40vw;
+}
+
+body main section.resume section.picture div.greenRect {
+  width: 30vw;
+  height: 90vh;
+  border: 10px solid rgb(195, 255, 200);
+  position: absolute;
+  top: 30px;
+  left: 250px;
+  z-index: -1;
+}
+
+body main section.resume section.picture div.greenRect2 {
+  width: 40vw;
+  height: 50vh;
+  border: 10px solid rgb(195, 255, 200);
+  position: absolute;
+  top: 100px;
+  left: -100px;
+  z-index: -1;
+}
+
+body main section.resume section.picture div.greenRect3 {
+  width: 50vw;
+  height: 40vh;
+  border: 10px solid rgb(195, 255, 200);
+  position: absolute;
+  top: 350px;
+  left: -180px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 420px) {
+  body nav {
+    position: static;
+  }
+
+  body nav ul {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
